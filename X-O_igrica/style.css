@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #485b6e;
+  }
+  
+  .container {
+    width: 300px;
+    margin: 50px auto;
+  }
+  
+  #game {
+    margin-bottom: 20px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  
+  #game>li {
+    list-style: none;
+    float: left;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 1px solid #000;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  #game>li:nth-child(n + 4) {
+    border-top: 0;
+  }
+  
+  #game>li:hover {
+    background: #f1f1f1;
+  }
+  
+  #game>li.x {
+    color: #ed4e6e
+  }
+  
+  #game>li.o {
+    color: #485b6e;
+  }
+  
+  #reset-game {
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    padding: 7px 15px;
+    color: #fff;
+    background-color: #ed4e6e;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    outline: 0;
+  }
+  
+  #reset-game:hover {
+    background: #2c3e52;
+  }
+  
